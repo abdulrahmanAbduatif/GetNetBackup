@@ -1,0 +1,4 @@
+ip,dtype,vendor,backup
+0.0.0.0,juniper_junos,juniper,show configuration | display set | no-more
+0.0.0.0,hp_procurve,hp,show running-config
+0.0.0.0,cisco_nxos,cisco,show running-config
