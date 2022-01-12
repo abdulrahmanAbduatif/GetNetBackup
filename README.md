@@ -30,17 +30,37 @@ sudo yum install libffi-devel  openssl-devel -y
 apt-get install build-essential libssl-dev libffi-dev -y
 ```
 ## Installation
-- Install python3 and git
-  - Centos and RedHat
+#### Install python3 and git
+* Centos and RedHat
 ```
 sudo yum install python3 -y
+```
+```
 sudo yum install python3-pip
+```
+```
 sudo yum install git
 ```
-  - Ubuntu
+* ubuntu
 ```
 apt-get install python3 -y
+```
+```
 apt-get install python3-pip
+```
+```
 apt-get install git
 ```
+
+#### Install the GetNetBackup
+```
+git clone https://github.com/abdulrahmanAbduatif/GetBackup.git
+```
+```
+cd GetNetBackup
+```
+```
+pip3 install -r requirements.txt
+````
+
 
