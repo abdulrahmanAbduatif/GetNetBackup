@@ -61,7 +61,7 @@ def check_argv():
         opts, args = getopt.getopt(argv, "hi:", ["InventoryPath="])
     except getopt.GetoptError:
         print(
-            f'{bcolors.FAIL}Error: Wrong syntax. Try <python get_backup.py -h> for more information on usage{bcolors.ENDC}')
+            f'{bcolors.FAIL}Error: Wrong syntax. Try <python GetNetBackup.py -h> for more information on usage{bcolors.ENDC}')
         sys.exit(2)
 
     if 2 >= len(argv) > 0 and not len(opts) == 0 and not args == 0:
@@ -69,7 +69,7 @@ def check_argv():
 
             if opt == '-h' and len(argv) == 1:
                 print(f'''{bcolors.WARNING}
-                Usage: python get_backup.py [ OPTION ] [ ARGUMENT ]
+                Usage: python GetNetBackup.py [ OPTION ] [ ARGUMENT ]
                 -h,  help       
                 -i,  --InventoryPath  The path to the inventory CSV file{bcolors.ENDC}''')
                 sys.exit()
@@ -84,7 +84,7 @@ def check_argv():
                            1. Missing Argument
                            2. Wrong file type
                            3. File does not exist
-                           Or try python get_backup.py -h for usage 
+                           Or try python GetNetBackup.py -h for usage 
                                    ''')
                     sys.exit()
                 else:
@@ -92,11 +92,11 @@ def check_argv():
 
             else:
                 print(
-                    f'{bcolors.FAIL}Error: Wrong syntax. Try <python find_host.py -h> for more information on usage{bcolors.ENDC}')
+                    f'{bcolors.FAIL}Error: Wrong syntax. Try <python GetNetBackup.py -h> for more information on usage{bcolors.ENDC}')
                 sys.exit(2)
     else:
         print(
-            f'{bcolors.FAIL}Error: Wrong syntax. Try <python get_backup.py -h> for more information on usage{bcolors.ENDC}')
+            f'{bcolors.FAIL}Error: Wrong syntax. Try <python GetNetBackup.py -h> for more information on usage{bcolors.ENDC}')
         sys.exit(2)
 
 # get back configuration
@@ -137,7 +137,7 @@ def get_backup(device_data):
 
             try:
                 # check if the directory exist if not create one
-                backupConf = open('get_backup.conf', 'r')
+                backupConf = open('GetNetBackup.conf', 'r')
                 backupPath = re.findall('{(.+?)}', backupConf.read())
                 # check if the path has slash at the end
                 if not backupPath[0].endswith('/'):
