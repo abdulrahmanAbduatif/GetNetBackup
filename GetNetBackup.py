@@ -228,7 +228,7 @@ def main():
             print(f'{bcolors.FAIL}{fail[0]}: {fail[1]}{bcolors.ENDC}')
             print(f'{bcolors.FAIL}-------------------------------------------{bcolors.ENDC}')
 
-    print(f'{bcolors.WARNING}###  Total time: {time.time() - start_time}{bcolors.ENDC}')
+    print(f'{bcolors.WARNING}###  Total time: {round(time.time() - start_time)} Seconds{bcolors.ENDC}')
 
 
 if __name__ == '__main__':
