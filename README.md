@@ -59,8 +59,12 @@ git clone https://github.com/abdulrahmanAbduatif/GetBackup.git
 ```
 cd GetNetBackup
 ```
+###### You might need to run it with sudo (root)
 ```
 pip3 install -r requirements.txt
 ````
 
+## Configuration
+- Setting the backup path configuration
+The configuration
 
