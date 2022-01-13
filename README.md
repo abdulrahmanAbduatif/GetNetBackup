@@ -100,8 +100,11 @@ $ python3 GetNetBackup.py -h
 python3 GetNetBackup.py -i inventory-test.csv 
 ```
 
-##### The output of the tools
+##### The output of the tools and The backup folder. 
 
-##### The backup folder
+###### Note: If you have multi-vendor devices, the tool will divide them into folders with the vendor name and add them all to a folder with the day date.
 
-## Have fun :wink: and keep automating :space_invader:
+<img width="798" alt="Screen Shot 2022-01-13 at 3 48 52 PM" src="https://user-images.githubusercontent.com/8627674/149334446-56d13e8d-0d0e-4776-bab8-d135e9b9fac8.png">
+
+
+## Have FUN :wink: and Keep Automating :space_invader:
