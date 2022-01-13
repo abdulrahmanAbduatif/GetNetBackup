@@ -86,3 +86,22 @@ pip3 install -r requirements.txt
 ##### **backup:** This is important. Here where you add the command line to read the configuration form the specific vendor device. For example Cisco and HP `show running-config` and Juniper `show configuration | display set | no-more`.
 
 ## Run GetNetBackup
+##### Run the GetNetBackup.py file
+```linux
+$ python3 GetNetBackup.py -h
+
+                Usage: python GetNetBackup.py [ OPTION ] [ ARGUMENT ]
+                -h,  help       
+                -i,  --InventoryPath  The path to the inventory CSV file
+
+```
+##### Take a backup
+```
+python3 GetNetBackup.py -i inventory-test.csv 
+```
+
+##### The output of the tools
+
+##### The backup folder
+
+## Have fun :wink: and keep automating :space_invader:
